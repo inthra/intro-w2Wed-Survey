@@ -7,3 +7,7 @@ li {
   font-size: 20px;
   font-weight: bold;
 }
+
+.form-inline {
+  margin-bottom: 20px;
+}
