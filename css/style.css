@@ -11,3 +11,7 @@ li {
 .form-inline {
   margin-bottom: 20px;
 }
+
+#result {
+  display: none;
+}

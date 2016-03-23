@@ -12,78 +12,87 @@
       <h1>Music Survey</h1>
     </div>
     <div class="container">
-      <form class="form-inline">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Jane Doe">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
-        </div>
-        <div class="form-group">
-          <label for="born">Date of birth:</label>
-          <input id="born" class="form-control" type="date">
-        </div>
-      </form>
-
-
-
+      <div id="blanks">
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
+          </div>
+          <div class="form-group">
+            <label for="born">Date of birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+        </form>
       <ol>
         <li>Of the following three choices, what is your favorite genre?</li>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Rock
+            <input type="radio" name="optionsRadios" id="genre1" value="option1">Rock
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Classical
+            <input type="radio" name="optionsRadios" id="genre2" value="option2">Classical
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Jazz
+            <input type="radio" name="optionsRadios" id="genre3" value="option3">Jazz
           </label>
         </div>
 
         <li>Which composer do you most admire?</li>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Mick Jagger/Keith Richards
+            <input type="radio" name="optionsRadios" id="composer1" value="option1">Mick Jagger/Keith Richards
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Alban Berg
+            <input type="radio" name="optionsRadios" id="composer2" value="option2">Alban Berg
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">John Coltrae
+            <input type="radio" name="optionsRadios" id="composer3" value="option3">John Coltrae
           </label>
         </div>
 
         <li>What instrument are you most interested in?</li>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Ableton software
+            <input type="radio" name="optionsRadios" id="instrument1" value="option1">Ableton software
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Gamelon
+            <input type="radio" name="optionsRadios" id="instrument2" value="option2">Gamelon
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Guitar
+            <input type="radio" name="optionsRadios" id="instrument3" value="option3">Guitar
           </label>
         </div>
 
       </ol>
       <hr>
       <button type="submit" class="btn btn-info">Submit</button>
+      </div>
+
+      <div id="result">
+        <h2>Results</h2>
+        <p>Name:<span class="name"></span></p>
+        <p>Email:<span class="email"></span></p>
+        <p>Date of Birth:<span class="born"></span></p>
+        <p>Favorite Genre:<span class="email"></span></p>
+
+
+      </div>
     </div>
 
   </body>
