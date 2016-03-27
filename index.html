@@ -7,91 +7,91 @@
     <script src ="js/scripts.js"></script>
     <title>Music Survey</title>
   </head>
+
   <body>
-    <div class="container" >
-      <h1>Music Survey</h1>
-    </div>
     <div class="container">
+      <h1>Music Survey</h1>
       <div id="blanks">
-        <form class="form-inline">
+        <form>
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+            <input id="name" type="text" class="form-control" placeholder="Jane Doe">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
+            <input id="email" type="email" class="form-control" placeholder="jane.doe@example.com">
           </div>
           <div class="form-group">
             <label for="born">Date of birth:</label>
-            <input type="date" class="form-control" id="born">
+            <input id="born"type="date" class="form-control">
           </div>
+
+          <ol>
+            <li>Of the following three choices, what is your favorite genre?</li>
+            <div class="radio">
+              <label>
+                <input type="radio" name="genre" value="Rock">Rock
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="genre" value="Classical">Classical
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="genre" value="Jazz">Jazz
+              </label>
+            </div>
+
+            <li>Which composer do you most admire?</li>
+            <div class="radio">
+              <label>
+                <input type="radio" name="composer" value="Mick Jagger/Keith Richards">Mick Jagger/Keith Richards
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="composer" value="Alban Berg">Alban Berg
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="composer" value="John Coltrae">John Coltrae
+              </label>
+            </div>
+
+            <li>What instrument are you most interested in?</li>
+            <div class="radio">
+              <label>
+                <input type="radio" name="instrument" value="Ableton software">Ableton software
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="instrument" value="Gamelon">Gamelon
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="instrument" value="Guitar">Guitar
+              </label>
+            </div>
+          </ol>
+
+          <hr>
+          <button type="submit" class="btn btn-info">Submit</button>
         </form>
-      <ol>
-        <li>Of the following three choices, what is your favorite genre?</li>
-        <div class="radio">
-          <label>
-            <input type="radio" name="genre" value="Rock">Rock
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="genre" value="Classical">Classical
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="genre" value="Jazz">Jazz
-          </label>
-        </div>
-
-        <li>Which composer do you most admire?</li>
-        <div class="radio">
-          <label>
-            <input type="radio" name="composer" value="Mick Jagger/Keith Richards">Mick Jagger/Keith Richards
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="composer" value="Alban Berg">Alban Berg
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="composer" value="John Coltrae">John Coltrae
-          </label>
-        </div>
-
-        <li>What instrument are you most interested in?</li>
-        <div class="radio">
-          <label>
-            <input type="radio" name="instrument" value="Ableton software">Ableton software
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="instrument" value="Gamelon">Gamelon
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="instrument" value="Guitar">Guitar
-          </label>
-        </div>
-
-      </ol>
-      <hr>
-      <button type="submit" class="btn btn-info">Submit</button>
       </div>
 
       <div id="result">
         <h2>Results</h2>
-        <p>Name:<span class="name"></span></p>
-        <p>Email:<span class="email"></span></p>
-        <p>Date of Birth:<span class="born"></span></p>
-        <p>Favorite Genre:<span class="genre"></span></p>
-        <p>Favorite Composer:<span class="composer"></span></p>
-        <p>Favorite Instrument:<span class="instrument"></span></p>
+        <p class="name"></p>
+        <p class="email"></p>
+        <p class="born"></p>
+        <p class="genre"></p>
+        <p class="composer"></p>
+        <p class="instrument"></p>
       </div>
     </div>
 
