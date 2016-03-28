@@ -25,6 +25,10 @@
             <label for="born">Date of birth:</label>
             <input id="born"type="date" class="form-control">
           </div>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
 
           <ol>
             <li>Of the following three choices, what is your favorite genre?</li>
@@ -82,16 +86,16 @@
           <hr>
           <button type="submit" class="btn btn-info">Submit</button>
         </form>
-      </div>
-
+      </div>  <!-- End div "blanks" -->
+      <h2>Results</h2>
       <div id="result">
-        <h2>Results</h2>
-        <p class="name"></p>
-        <p class="email"></p>
-        <p class="born"></p>
-        <p class="genre"></p>
-        <p class="composer"></p>
-        <p class="instrument"></p>
+        <p>Name: <span class="name"></span></p>
+        <p>email: <span class="email"></span></p>
+        <p>Date of Birth: <span class="born"></span></p>
+        <p>Favorite Color: <span class="color"></span></p>
+        <p>Genre: <span class="genre"></span></p>
+        <p>Composer: <span class="composer"></span></p>
+        <p>Instrument: <span class="instrument"></span></p>
       </div>
     </div>
 
